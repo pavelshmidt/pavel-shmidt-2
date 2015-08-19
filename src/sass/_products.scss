@@ -1,0 +1,161 @@
+.nav-product {
+  &__wrap {
+    margin-top: 19px;
+    margin-bottom: 16px;
+  }
+  &__item {
+    display: inline-block;
+    &:after {
+      content: ">";
+      display: inline-block;
+      margin-left: 3px;
+      color: #5c7b98;
+      vertical-align: middle;
+    }
+    &_last-child {
+      &:after {
+        content: "";
+      }
+    }
+  }
+  &__link {
+    display: inline-block;
+    height: 100%;
+    font: 14px "ElektraLightPro";
+    color: #00b9fe;
+    text-decoration: underline;
+    vertical-align: middle;
+  }
+  &__text {
+    display: inline-block;
+    font: 14px "ElektraLightPro";
+    color: #5c7b98;
+    vertical-align: middle;
+  }
+}
+.preview {
+  margin-bottom: 54px;
+  @extend %clearfix;
+}
+.product-slider {
+  float: left;
+  margin-right: 30px;
+  width: 298px;
+}
+.slider-product-for {
+  &__wrap {
+    margin: 0 auto;
+    margin-top: 16px;
+    width: 290px;
+  }
+}
+.product-info {
+  float: left;
+  &__title {
+    font: 25px "ElektraLightPro";
+    color: #00b9fe;
+    &__wrap {
+      margin-bottom: 27px;
+    }
+  }
+}
+.product-specs {
+  width: 189px+225px;
+  font: 14px "ElektraLightPro";
+  color: #5c7b98;
+  @extend %clearfix;
+  &__spec {
+    float: left;
+    padding: 5px 8px;
+    width: 189px;
+    text-align: left;
+    &_grey {
+      background: #eef2f4;
+    }
+  }
+  &__desc {
+    text-align: center;
+    float: left;
+    padding: 5px 0;
+    width: 225px;
+    &_grey {
+      background: #eef2f4;
+    }
+  }
+}
+.about-store {
+  @extend %clearfix;
+  margin-bottom: 39px;
+  &__title {
+    font: 25px "ElektraLightPro";
+    color: #5c7b98;
+  }
+}
+.store-info {
+  font: 15px "ElektraPro";
+  color: #5c7b98;
+  line-height: 20px;
+  &__wrap {
+    padding: 0 17px;
+    margin-top: 10px;
+    &_first-child {
+      padding-left: 0;
+    }
+  }
+}
+.up {
+  display: block;
+  position: relative;
+  padding: 10px 10px;
+  background: #00b9fe;
+  font: 16px "ElektraLightPro";
+  color: #ffffff;
+  &__wrap {
+    position: absolute;
+    right: -93px;
+    bottom: 24px;
+  }
+  &:after {
+    content: "";
+    display: block;
+    margin-left: -5px;
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    border: 5px solid transparent;
+    border-bottom: 9px solid #00b9fe;
+  }
+  &:before {
+    content: "";
+    display: block;
+    margin-left: -5px;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    border: 5px solid transparent;
+    border-bottom: 9px solid #fff;
+  }
+}
+.slider-product {
+  &__wrap {
+    margin: 0 auto;
+    width: 80%;
+  }
+  &__img {
+    margin: 0 10px;
+  }
+}
+.slick-prev:before{
+  content: "";
+  display: inline-block;
+  background: url("../img/arrow-left.png");
+  width: 22px;
+  height: 34px;
+}
+.slick-next:before {
+  content: "";
+  display: inline-block;
+  background: url("../img/arrow-right.png");
+  width: 22px;
+  height: 34px;
+}

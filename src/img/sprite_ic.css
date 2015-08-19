@@ -1,0 +1,83 @@
+.sprite {
+    background-image: url(sprite_ic.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.sprite-addres_ic {
+    width: 16px;
+    height: 22px;
+    background-position: 0 0;
+}
+
+.sprite-appstore {
+    width: 90px;
+    height: 32px;
+    background-position: -16px 0;
+}
+
+.sprite-fb_footer {
+    width: 48px;
+    height: 44px;
+    background-position: 0 -32px;
+}
+
+.sprite-fb_header {
+    width: 26px;
+    height: 26px;
+    background-position: -106px 0;
+}
+
+.sprite-google_play {
+    width: 91px;
+    height: 32px;
+    background-position: -48px -32px;
+}
+
+.sprite-ipad {
+    width: 63px;
+    height: 51px;
+    background-position: -48px -64px;
+}
+
+.sprite-iphone_6 {
+    width: 35px;
+    height: 51px;
+    background-position: -111px -64px;
+}
+
+.sprite-korzina {
+    width: 20px;
+    height: 17px;
+    background-position: 0 -115px;
+}
+
+.sprite-macbook {
+    width: 59px;
+    height: 36px;
+    background-position: -139px 0;
+}
+
+.sprite-tw_footer {
+    width: 46px;
+    height: 44px;
+    background-position: -146px -36px;
+}
+
+.sprite-tw_header {
+    width: 25px;
+    height: 26px;
+    background-position: 0 -80px;
+}
+
+.sprite-vk_footer {
+    width: 40px;
+    height: 44px;
+    background-position: -146px -80px;
+}
+
+.sprite-vk_header {
+    width: 27px;
+    height: 26px;
+    background-position: -20px -124px;
+}

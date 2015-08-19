@@ -1,0 +1,256 @@
+.header {
+  &__top{
+    height: 41px;
+    background: #44626e;
+  }
+  &__bottom {
+    height: 97px;
+    background: #e7edf5;
+  }
+}
+.social {
+  &__wrap {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 98%;
+  }
+  &__item {
+    display: inline-block;
+    //margin-left: 3px;
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}
+.address {
+  font: 13px "ElektraPro";
+  color: #ffffff;
+  &__wrap {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 98%;
+  }
+  &__ic {
+    margin-right: 5px;
+    vertical-align: middle;
+  }
+  &__text {
+    vertical-align: middle;
+  }
+}
+.telephone {
+  font: 25px "ElektraPro";
+  color: #ffffff;
+  &__wrap {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 98%;
+  }
+  &__mod {
+    margin-right: 3px;
+    font-size: 15px;
+    color: #2090bb;
+    vertical-align: top;
+  }
+}
+.logo {
+  &__wrap {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 98%;
+  }
+}
+.search {
+  font-size: 0;
+  height: 35px;
+  &__wrap {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 98%;
+  }
+  &__input {
+    margin-top: -10px;
+    padding: 11px 10px;
+    width: 259px;
+    height: 35px;
+    border: 1px solid #dce6f0;
+    border-right: none;
+    border-radius: 0;
+    font: 15px "ElektraPro";
+    color: #dce6f0;
+    @include placeholder() {
+      font: 15px "ElektraPro";
+      color: #dce6f0;
+    }
+  }
+  &__btn {
+    width: 80px;
+    height: 35px;
+    text-align: center;
+    //vertical-align: middle;
+    background: #00b9fe;
+    border: none;
+    font: 17px "ElektraLightPro";
+    color: #ffffff;
+  }
+}
+.user-panel {
+  &__wrap {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 98%;
+    margin-left: 13px;
+  }
+  &__item {
+    display: inline-block;
+    position: relative;
+    padding: 0 10px;
+    //margin-left: 10px;
+    height: 43px;
+    line-height: 43;
+    font: 13px "ElektraLightPro";
+    color: #00b9fe;
+    text-decoration: underline;
+    vertical-align: middle;
+    &:first-child {
+      //padding-left: 0;
+    }
+    &:hover {
+      color: #5c7b98;
+      background: #ffffff;
+    }
+  }
+  &__link {
+    line-height: 43px;
+    vertical-align: middle;
+    &__ic {
+      margin: 0 18px 0 1px;
+      vertical-align: middle;
+    }
+    &__text {
+      vertical-align: middle;
+    }
+    &:hover {
+      color: #613993;
+    }
+    
+  }
+  &__link-hover {
+    display: none;
+    width: 175%;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    z-index: 9999;
+    &__list {
+      border: 1px solid #dce6f0;
+    }
+    &__item {
+      padding: 12px 0;
+      @extend %middle;
+      background: #ffffff;
+      &_gray {
+        background: #f8fafb;
+      }
+    }
+    &__ic {
+      display: inline-block;
+      vertical-align: middle;
+      &__wrap {
+        display: inline-block;
+        width: 50px;
+        text-align: right;
+      }
+    }
+    &__link {
+      display: inline-block;
+      vertical-align: middle;
+      color: #00b9fe;
+      text-decoration: underline;
+      &__wrap {
+        display: inline-block;
+        margin-left: 20px;
+        width: 135px;
+        text-align: left;
+      }
+      &:hover {
+        color: #613993;
+      }
+    }
+  }
+}
+.navigation {
+  background: #f7f7f7;
+  border-bottom: 1px solid #e3e3e3;
+}
+.nav-main {
+  font-size: 0;
+  &__item {
+    display: inline-block;
+    //height: 100%;
+    //@extend %middle;
+    background: #f7f7f7;
+    font: 15px "ElektraLightPro";
+    color: #b9c5d1;
+  }
+  &__link {
+    text-align: center;
+    display:block;
+    //vertical-align: middle;
+    position: relative;
+    //margin-left: 40px;
+    padding: 12px 17px;
+    height: 100%;
+    //width: 100%;
+    background: #f7f7f7;
+    &:after,&:before{
+      content: "";
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      right: -35px;
+      border: 21px solid transparent;
+      border-left: 16px solid #f7f7f7;
+      z-index: 999;
+    }
+    &:before {
+      border-left: 16px solid #dbe2ec;
+      right: -36px;
+    }
+    &:hover {
+      background: #dce6f0;
+      color: #ffffff;
+      &:after {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        right: -35px;
+        border: 21px solid transparent;
+        border-left: 16px solid #dce6f0;
+        z-index: 9999;
+      }
+    }
+    &_margin {
+      padding-left: 27px;
+    }
+    &_active {
+      background: #00b9fe;
+      color: #ffffff;
+      &:after,&:before {
+        right: -35px;
+        border-left: 16px solid #00b9fe;
+      }
+    }
+  }
+}
+.widthp1 {
+  width: 25%;
+}
+.widthp2 {
+  width: 35%;
+  left: 25%;
+}
+.widthp3 {
+  width: 40%;
+}

@@ -1,0 +1,75 @@
+.main-footer {
+  background: url("../img/bg-footer.png");
+}
+.logo2 {
+  &__wrap {
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+.group-links {
+  width: 98%;
+  display: inline-block;
+  vertical-align: middle;
+  &__item {
+    margin-left: 77px;
+    display: inline-block;
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}
+.lisks-footer {
+  &__title {
+    font: 15px "ElektraLightPro";
+    color: #ffffff;
+  }
+  &__item {
+    margin-top: 6px;
+    &:first-child {
+      margin-left: 0;
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+  &__link {
+    font: 15px "ElektraPro";
+    color: #ffffff;
+    text-decoration: underline;
+  }
+}
+.grou-social {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
+  &__row {
+    &:first-child {
+      margin-bottom: 24px;
+    }
+  }
+}
+.modile-links {
+  &__item {
+    display: inline-block;
+  }
+}
+.social2 {
+  &__item {
+    display: inline-block;
+    margin-left: 3px;
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}
+.widthp4 {
+  width: 25%;
+}
+.widthp5 {
+  left: 25%;
+  width: 45%;
+}
+.widthp6 {
+  width: 30%;
+}

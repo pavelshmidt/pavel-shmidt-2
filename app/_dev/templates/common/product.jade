@@ -1,0 +1,63 @@
+.container
+    section.product-navigation
+        .nav-product__wrap
+            ul.nav-product
+                li.nav-product__item
+                    a(class="nav-product__link",href="#") Главная
+                li.nav-product__item
+                    a(class="nav-product__link",href="#") Каталог
+                li.nav-product__item.nav-product__item_last-child
+                    span.nav-product__text iPad Air Wi-Fi + Cellular 128GB - Silver
+    section.preview
+        article.product-slider
+            .slider-product-for__wrap
+                #slider-product-for
+                    -for (var i = 1; i <= 6; i++)
+                        img(class="slider-product-for__img", src="/images/slide-4.jpg")
+            .slider-product__wrap
+                #slider-product
+                    -for (var i = 1; i <= 2; i++)
+                        img(class="slider-product__img", src="/images/slide-1.jpg")
+                        img(class="slider-product__img", src="/images/slide-2.jpg")
+                        img(class="slider-product__img", src="/images/slide-3.jpg")
+        article.product-info
+            .product-info__title__wrap
+                h2.product-info__title iPad Air Wi-Fi + Cellular 128GB - Silver
+            .product-specs__wrap
+                table.product-specs
+                    -for (var i = 1; i <= 6; i++)
+                        tr
+                            td Артикул
+                            td 42787825
+
+    section.about-store
+        h2.about-store__title Пара слов о магазине
+        .about-store__text
+            //p
+            | Lorem ipsum dolor sit amet, consectetur adipisicing
+            | elit. Atque ex laboriosam natus numquam totam?
+            | Asperiores aspernatur, autem consequatur consequuntur
+            | deleniti enim impedit laboriosam laborum molestias
+            | nobis nostrum numquam qui quisquam, quod repellat
+            | sequi sunt. Aperiam culpa nemo omnis soluta suscipit?
+            | nobis nostrum numquam qui quisquam, quod repellat
+            | sequi sunt. Aperiam culpa nemo omnis soluta suscipit?
+            //| Lorem ipsum dolor sit amet, consectetur adipisicing
+            | elit. Atque ex laboriosam natus numquam totam?
+            | Asperiores aspernatur, autem consequatur consequuntur
+            | deleniti enim impedit laboriosam laborum molestias
+            | nobis nostrum numquam qui quisquam, quod repellat
+            | sequi sunt. Aperiam culpa nemo omnis soluta suscipit?
+            | nobis nostrum numquam qui quisquam, quod repellat
+            | sequi sunt. Aperiam culpa nemo omnis soluta suscipit?
+            //p
+            | Lorem ipsum dolor sit amet, consectetur adipisicing
+            | elit. Atque ex laboriosam natus numquam totam?
+            | Asperiores aspernatur, autem consequatur consequuntur
+            | deleniti enim impedit laboriosam laborum molestias
+            | nobis nostrum numquam qui quisquam, quod repellat
+            | sequi sunt. Aperiam culpa nemo omnis soluta suscipit?
+            | nobis nostrum numquam qui quisquam, quod repellat
+            | sequi sunt. Aperiam culpa nemo omnis soluta suscipit?
+    .up__wrap
+        a(class="up", id='up', href="#") Наверх

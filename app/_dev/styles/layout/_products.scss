@@ -37,19 +37,8 @@
   margin-bottom: 54px;
   @extend %clearfix;
 }
-.product-slider {
-  float: left;
-  margin-right: 30px;
-  width: 298px;
-}
-.slider-product-for {
-  &__wrap {
-    margin: 0 auto;
-    margin-top: 16px;
-    width: 290px;
-  }
-}
 .product-info {
+  width: 470px;
   float: left;
   &__title {
     font: 25px "ElektraLightPro";
@@ -60,52 +49,36 @@
   }
 }
 .product-specs {
-  width: 189px+225px;
-  font: 14px "ElektraLightPro";
-  color: #5c7b98;
-  @extend %clearfix;
-  &__spec {
-    float: left;
-    padding: 5px 8px;
-    width: 189px;
-    text-align: left;
-    &_grey {
-      background: #eef2f4;
-    }
+  width: 100%;
+  td {
+    padding: 10px;
+    line-height: 16px;
+    font: 14px "ElektraLightPro";
+    color: #5c7b98;
   }
-  &__desc {
-    text-align: center;
-    float: left;
-    padding: 5px 0;
-    width: 225px;
-    &_grey {
-      background: #eef2f4;
-    }
+  &_grey {
+    background: #eef2f4;
   }
 }
 .about-store {
   @extend %clearfix;
   margin-bottom: 39px;
   &__title {
+    margin-bottom: 10px;
     font: 25px "ElektraLightPro";
     color: #5c7b98;
   }
-}
-.store-info {
-  font: 15px "ElektraPro";
-  color: #5c7b98;
-  line-height: 20px;
-  &__wrap {
-    padding: 0 17px;
-    margin-top: 10px;
-    &_first-child {
-      padding-left: 0;
-    }
+  &__text {
+    font: 15px "ElektraPro";
+    color: #5c7b98;
+    line-height: 20px;
   }
 }
 .up {
   display: block;
-  position: relative;
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
   padding: 10px 10px;
   background: #00b9fe;
   font: 16px "ElektraLightPro";
@@ -136,26 +109,23 @@
     border-bottom: 9px solid #fff;
   }
 }
-.slider-product {
-  &__wrap {
-    margin: 0 auto;
-    width: 80%;
-  }
-  &__img {
-    margin: 0 10px;
-  }
-}
 .slick-prev:before{
   content: "";
   display: inline-block;
-  background: url("../img/arrow-left.png");
+  background: url("/images/arrow-left.png");
   width: 22px;
   height: 34px;
 }
 .slick-next:before {
   content: "";
   display: inline-block;
-  background: url("../img/arrow-right.png");
+  background: url("/images/arrow-right.png");
   width: 22px;
   height: 34px;
+}
+.column {
+  padding-left: 25px;
+  &:first-child {
+    padding-left: 0;
+  }
 }

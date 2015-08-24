@@ -1,0 +1,27 @@
+extends ../layouts/main
+block title
+    title Главная страница
+block css
+
+    // build:css images/sprites.css
+    link(rel='stylesheet', href='/images/sprite_ic.css')
+    // endbuild
+
+    // build:css fonts/fonts.css
+    link(rel='stylesheet', href='/fonts/elektra/stylesheet.css')
+    // endbuild
+
+    // build:css css/main.css
+    link(rel="stylesheet", href="/styles/main.css")
+    // endbuild
+
+block header
+    include ../common/header
+block middle
+    include ../common/product
+block footer
+    include ../common/footer
+block js
+    // build:js js/main.js
+    script(src="/scripts/main.js")
+    // endbuild

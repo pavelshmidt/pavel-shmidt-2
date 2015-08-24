@@ -3,11 +3,14 @@ var myModyle = function () {
     var init = function () {
         _setUpListners();
         _slider();
+        _tableColor();
+        _colums();
     };
     //Прослушка события
     var _setUpListners = function () {
-        $(".user-panel__item_korzina").hover(_hover_over, _hover_out)
-        $(".user-panel__link-hover").hover(_hover_over, _hover_out)
+        $(".user-panel__basket").hover(_hover_over, _hover_out);
+        $(".user-panel__link-hover").hover(_hover_over, _hover_out);
+        $('#up').on('click', _scrollUp);
     };
     //Слайдер
     var _slider = function() {
@@ -29,10 +32,26 @@ var myModyle = function () {
     };
     //hover эффект
     var _hover_over = function() {
-        $(".user-panel__link-hover").show()
+        $(".basket-hover").show()
     }
     var _hover_out = function() {
-        $(".user-panel__link-hover").hide()
+        $(".basket-hover").hide()
+    };
+    //Покраска таблицы
+    var _tableColor = function() {
+        $('.product-specs tr:odd').addClass('product-specs_grey');
+    }
+    //Создание колонок
+    var _colums = function () {
+        $('.about-store__text').columnize({
+            width:300,
+            colums:3
+        })
+    }
+    //Кнопра скрола наверх
+    var _scrollUp = function (e) {
+        e.preventDefault()
+        $('body, html').animate({scrollTop:0},300)
     }
     //Возвращаемый модуль
     return {

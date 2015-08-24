@@ -1,5 +1,5 @@
 .main-footer {
-  background: url("../img/bg-footer.png");
+  background: url("/images/bg-footer.png");
 }
 .logo2 {
   &__wrap {
@@ -34,6 +34,8 @@
     }
   }
   &__link {
+    display: block;
+    margin-top: 6px;
     font: 15px "ElektraPro";
     color: #ffffff;
     text-decoration: underline;

@@ -1,12 +1,17 @@
-/* Config */
+//Начальные настройки
 $container-width: 1000px;
 $footer-height: 228px;
-/* end Config */
+
+//Прижимние футера к низу
 .html {
+  height: 100%;
+}
+.body {
   height: 100%;
 }
 .wrapper {
   min-height: 100%;
+  min-width: $container-width;
   &:after {
     content: '';
     display: block;
@@ -14,18 +19,22 @@ $footer-height: 228px;
   }
 }
 .main-footer {
-  height: $footer-height;
   margin-top: $footer-height*-1;
+  min-width: $container-width;
+  height: $footer-height;
 }
-.body {
+//Контейнер
+.container {
+  position: relative;
+  margin: 0 auto;
+  width: $container-width;
   height: 100%;
+  @extend %clearfix;
 }
-%container {
-    margin: 0 auto;
-    //padding: 0 10px;
-    max-width: $container-width;
-    height: 100%;
+.container_middle {
+  @extend %middle;
 }
+//Clearfix
 %clearfix {
   &:before,&:after {
     content: " ";
@@ -39,25 +48,13 @@ $footer-height: 228px;
 .clearfix {
   @extend %clearfix;
 }
-.container {
-    position: relative;
-    @extend %container;
-    @extend %clearfix;
-}
-//reset
-* {
-  box-sizing: border-box;
-}
-a {
-  color: inherit;
-  text-decoration: none;
-}
+//Дополнительные классы
 .bold {
   font-weight: bold;
 }
 .text-hide {
-   display: inline-block;
-  // overflow: hidden;
+  text-align: left;
+  display: inline-block;
   text-indent: -9999px;
 }
 %pos-l {
@@ -102,12 +99,6 @@ a {
   position: relative;
   display: block;
   @extend %clearfix;
-}
-@mixin placeholder () {
-  &::-webkit-input-placeholder {@content}
-  &::-moz-placeholder          {@content}/* Firefox 19+ */
-  &:-moz-placeholder           {@content}/* Firefox 18- */
-  &:-ms-input-placeholder      {@content}
 }
 .bg-grey {
   background: #eef2f4;
@@ -164,7 +155,9 @@ a {
 .center {
   text-align: center;
 }
+//align
 %middle {
+  font-size: 0;
   &:before {
     content: "";
     display: inline-block;

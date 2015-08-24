@@ -1,0 +1,21 @@
+.product-slider {
+  float: left;
+  margin-right: 30px;
+  width: 298px;
+}
+.slider-product-for {
+  &__wrap {
+    margin: 0 auto;
+    margin-top: 16px;
+    width: 290px;
+  }
+}
+.slider-product {
+  &__wrap {
+    margin: 0 auto;
+    width: 80%;
+  }
+  &__img {
+    margin: 0 10px;
+  }
+}

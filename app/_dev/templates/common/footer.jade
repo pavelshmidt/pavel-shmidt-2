@@ -1,0 +1,35 @@
+.container
+    .col1-3a.widthp4
+        .logo2__wrap
+            .logo2
+                img(class="logo2__img" src="/images/logo2.png")
+                span.text-hide ЭпплShop
+    .col2-3a.widthp5
+        ul.group-links
+            li.group-links__item
+                .lisks-footer__title О магазине
+                each title in ['О нас', 'Наши цены', 'Наши скидки', 'Акции']
+                    a(class="lisks-footer__link", href="#")=title
+            li.group-links__item
+                .lisks-footer__title О магазине
+                each title in ['О нас', 'Наши цены', 'Наши скидки', 'Акции']
+                    a(class="lisks-footer__link", href="#")=title
+            li.group-links__item
+                .lisks-footer__title О магазине
+                each title in ['О нас', 'Наши цены', 'Наши скидки', 'Акции']
+                    a(class="lisks-footer__link", href="#")=title
+    .col3-3a.widthp6.right
+        ul.grou-social
+            li.grou-social__row
+                ul.modile-links
+                    li.modile-links__item
+                        a(class="modile-links__link sprite sprite-appstore text-hide",href="#") Appstore
+                    li.modile-links__item
+                        a(class="modile-links__link sprite sprite-google_play text-hide",href="#") Google play
+            li.grou-social__row
+                .social2__wrap
+                    ul.social2
+                        - var socials = {vk_footer:"Вконтакте", fb_footer:"Фейсбук", tw_footer:"Твиттер"}
+                        - each value,kay in socials
+                            li.social2__item
+                                a(class="social2__link "+"sprite " +"sprite-"+kay+ " text-hide", href="#")= value

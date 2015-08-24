@@ -1,0 +1,58 @@
+section.header__top
+    .container.container_middle
+        .social__wrap
+            ul.social
+                - var socials = {vk_header:"Вконтакте", fb_header:"Фейсбук", tw_header:"Твиттер"}
+                - each value,kay in socials
+                    li.social__item
+                        a(class="social__link "+"sprite " +"sprite-"+kay+ " text-hide", href="#")=value
+        .address__wrap
+            address.address
+                i(class="address__ic sprite sprite-addres_ic")
+                span.address__text г. Москва, ул. Новая 246, офис 214
+        .telephone__wrap
+            a(class="telephone",href="tel:+7911592643")
+                span.telephone__mod +7 (921)
+                span 322 12 32
+section.header__bottom
+    .container.container_middle
+        .logo__wrap
+            a(href="#").logo
+                img(class="logo__img" src="/images/logo.png")
+                span.text-hide ЭпплShop
+        .search__wrap
+            form.search
+                input(class="search__input" type="text" placeholder="iMac 27 дюймов")
+                button(class="search__btn" type="submit") Поиск
+        .user-panel__wrap
+            ul.user-panel
+                li.user-panel__item
+                    a(class="user-panel__link", href="#") Карта проезда
+                li.user-panel__item
+                    a(class="user-panel__link", href="#") История заказов
+                li.user-panel__item.user-panel__basket
+                    a(class="user-panel__link", href="#")
+                        i.user-panel__link__ic.sprite-korzina.sprite
+                        span.user-panel__link__text Корзина (
+                            span.user-panel__link__number 3
+                            |)
+                        .basket-hover
+                         ul.basket-hover__list
+                             li.basket-hover__item
+                                 .basket-hover__ic__wrap
+                                     i(class="basket-hover__ic sprite sprite-iphone_6")
+                                 a(class="basket-hover__link basket-hover__link_margin", href="#")= "iPhone 6"
+                             li.basket-hover__item.basket-hover__item_gray
+                                 .basket-hover__ic__wrap
+                                     i(class="basket-hover__ic sprite sprite-ipad")
+                                 a(class="basket-hover__link", href="#")= "iPad Air Wi-Fi + Cellular 128GB - Silver"
+                             li.basket-hover__item
+                                 .basket-hover__ic__wrap
+                                     i(class="basket-hover__ic sprite sprite-macbook")
+                                 a(class="basket-hover__link", href="#")= "Macbook Air"
+nav.navigation
+    .container
+        ul.nav-main
+            each title,ndx in ['Мобильные телефоны', 'Планшеты', 'Мр3 плееры', 'Персональные компьютеры', 'Ноутбуки', 'Apple TV', 'Аксесуары']
+                li(class='nav-main__item')
+                    a(class="nav-main__link" + ((ndx==6) ? ' nav-main__link_active':''), href="#")=title
